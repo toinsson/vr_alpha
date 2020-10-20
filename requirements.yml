@@ -1,0 +1,5 @@
+conda:
+  jupyter
+  notebook
+  pandas
+  seaborn
