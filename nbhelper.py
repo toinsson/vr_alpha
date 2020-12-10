@@ -1,6 +1,9 @@
 import numpy as np
 import pandas as pd
 
+from IPython.display import display, HTML
+display(HTML("<style>.container { width:80% !important; }</style>"))
+
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from matplotlib.patches import Ellipse
@@ -9,7 +12,8 @@ import matplotlib.transforms as transforms
 import seaborn as sns
 sns.set_palette('tab10')
 
-
+import GPy
+from sklearn.model_selection import KFold, RepeatedKFold
 
 def get_data():
     df0 = pd.read_csv('./data/Data1stExpe.csv')
